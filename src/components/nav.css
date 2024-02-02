@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Overview,
+.repository,
+.star,
+.Project,
+.Packages {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}

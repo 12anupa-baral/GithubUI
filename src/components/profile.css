@@ -1,0 +1,37 @@
+.profile {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10%;
+    height: fit-content;
+
+}
+
+.location {
+    font-size: 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+
+}
+
+.bio {
+    width: 200px;
+    font-size: 10px;
+}
+
+.btn {
+    width: 200px;
+    font-size: 10px;
+}
+
+.follow {
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+}

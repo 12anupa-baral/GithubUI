@@ -1,0 +1,19 @@
+.repo {
+    float: right;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: start;
+    font-size: 12px;
+}
+
+h4 {
+    text-align: right;
+    margin-right: 350px;
+}
