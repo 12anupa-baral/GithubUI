@@ -3,7 +3,6 @@
     padding: 15px;
     border-radius: 10%;
     height: fit-content;
-
 }
 
 .location {
@@ -16,8 +15,6 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-
-
 }
 
 .bio {
@@ -31,7 +28,17 @@
 }
 
 .follow {
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     font-size: 10px;
+}
+
+.follower {
+    display: flex;
+    align-items: center;
+}
+
+.follower svg {
+    margin-right: 5px;
 }

@@ -1,3 +1,7 @@
+* {
+    border-radius: 5px;
+}
+
 .repo {
     float: right;
 }
@@ -5,12 +9,16 @@
 .user {
     display: flex;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .top {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     font-size: 12px;
+    padding: 20px;
 }
 
 h4 {

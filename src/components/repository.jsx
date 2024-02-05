@@ -1,33 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./repository.css";
+import useRepositories from "./userepository";
+import { useTheme } from "./theme";
 
 function Repo() {
-  const [repositories, setRepositories] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const username = "12anupa-baral";
-        const response = await fetch(
-          `https://api.github.com/users/${username}/repos`
-        );
-        const data = await response.json();
-
-        if (data.length > 0) {
-          setRepositories(data);
-        } else {
-          setRepositories([]);
-        }
-      } catch (error) {
-        console.error("Error fetching repository data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const username = "12anupa-baral";
+  const repositories = useRepositories(username);
+  // const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <>
+      {/* <div className={isDarkMode ? "dark" : "light"}> */}
       {repositories.map((repo) => (
         <div className="container" key={repo.id}>
           <div className="reposit">
@@ -41,6 +24,7 @@ function Repo() {
           </div>
         </div>
       ))}
+      {/* </div> */}
     </>
   );
 }
